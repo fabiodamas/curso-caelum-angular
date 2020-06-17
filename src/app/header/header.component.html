@@ -1,3 +1,4 @@
+<!-- topo da página e busca de filtrar emails-->
 <header class="headerGlobal mdl-layout__header">
   <button	class="mdl-layout__drawer-button"	(click)="toggleMenu()">
   <span	class="material-icons">menu</span> fabio
@@ -20,18 +21,24 @@
      <!--./Search-->
   </div>
 </header>
+
+<!-- menu lateral a esquerda-->
 <section	class="headerGlobal__menuArea	mdl-layout__drawer"	[ngClass]="{	'headerGlobal__menuArea--active':	isMenuOpen}">
   <span class="mdl-layout-title">
   <img class="headerGlobal__logo" src="assets/img/logo.svg" alt="CMail">
   </span>
+
+  <!-- nome e email-->
   <header class="headerGlobal__userInfo">
      <img src="http://placehold.it/48x48" class="headerGlobal__userInfoAvatar">
      <div class="headerGlobal__userInfoData">
         <h5 class="headerGlobal__userInfoDataName">Pessoa de Tal</h5>
-        <span>pesso.al@cmail.br</span>
+        <span>fabio.damas@gmail.com</span>
         <div class="mdl-layout-spacer"></div>
      </div>
   </header>
+
+  <!-- botões-->
   <nav class="mdl-navigation">
      <a class="mdl-navigation__link">
      <span class="material-icons">person</span> Login
@@ -47,4 +54,5 @@
      </a>
   </nav>
 </section>
+
 <div	class="headerGlobal__menuOverlay"	(click)="toggleMenu()"></div>
