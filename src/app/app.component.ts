@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -15,14 +16,19 @@ export class AppComponent {
     conteudo: ''
   }
 
-  handleNewEmail(event: Event) {
-    event.preventDefault();
+  //código anterior omitido
+  handleNewEmail(formEmail: NgForm) {
+    if(formEmail.invalid) return;
+
     this.emailList.push(this.email)
+
     this.email = {
     destinatario: '',
     assunto: '',
     conteudo: ''
     }
+    
+    formEmail.reset();
   }
   
   get	isNewEmailFormOpen(){
