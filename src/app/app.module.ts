@@ -5,12 +5,16 @@ import { AppComponent } from './app.component';
 import	{HeaderComponent}	from	'./header/header.component';
 import { FormsModule } from '@angular/forms';
 import { CaixaDeEntradaComponent } from './modules/caixa-de-entrada/caixa-de-entrada.component';
+import { LoginComponent } from './modules/login/login.component';
+import { CadastroComponent } from './modules/cadastro/cadastro.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    CaixaDeEntradaComponent
+    CaixaDeEntradaComponent,
+    LoginComponent,
+    CadastroComponent
   ],
   imports: [
     BrowserModule,
