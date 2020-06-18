@@ -49,8 +49,8 @@
                           <!-- ./[Assunto] -->
                           <!-- [Conteúdo] -->
                           <div class="cmailInputForm">
-                             <div class="mdl-textfield mdl-textfield--floating-label">
-                                <textarea #conteudo="ngModel" [(ngModel)]="email.conteudo" name="conteudo" class="mdl-textfield__input" id="conteudo"></textarea>
+                             <div class="mdl-textfield mdl-textfield--floating-label" [ngClass]="{'is-invalid': conteudo.invalid && conteudo.touched}">
+                                <textarea #conteudo="ngModel" [(ngModel)]="email.conteudo" required name="conteudo" class="mdl-textfield__input" id="conteudo"></textarea>
                                 <span class="mdl-textfield__error">Informar um conteúdo é obrigatório!</span>
                                 <label class="mdl-textfield__label" for="email"> Conteúdo: </label>
                                 <span class="mdl-textfield__formline"></span>
