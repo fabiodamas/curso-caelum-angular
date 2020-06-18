@@ -40,19 +40,25 @@
 
   <!-- botões-->
   <nav class="mdl-navigation">
-     <a class="mdl-navigation__link">
-     <span class="material-icons">person</span> Login
-     </a>
-     <a class="mdl-navigation__link">
-     <span class="material-icons">create</span> Cadastro
-     </a>
-     <a class="mdl-navigation__link">
-     <span class="material-icons">inbox</span> Caixa de Entrada
-     </a>
-     <a class="mdl-navigation__link">
-     <span class="material-icons">logout</span> Logout
-     </a>
-  </nav>
+   <a routerLink="" class="mdl-navigation__link">
+   <span class="material-icons">person</span> Login
+   </a>
+   <a routerLink="/cadastro"
+      routerLinkActive="mdl-navigation__link--current"
+      class="mdl-navigation__link">
+   <span class="material-icons">create</span> Cadastro
+   </a>
+   <a routerLink="/inbox"
+      routerLinkActive="mdl-navigation__link--current"
+      class="mdl-navigation__link">
+   <span class="material-icons">inbox</span> Caixa de Entrada
+   </a>
+   <a routerLink="/logout" class="mdl-navigation__link">
+   <span class="material-icons">logout</span> Logout
+   </a>
+</nav>
+
+
 </section>
 
 <div	class="headerGlobal__menuOverlay"	(click)="toggleMenu()"></div>

@@ -6,7 +6,17 @@ import {CadastroComponent } from './modules/cadastro/cadastro.component';
 const rotas: Routes = [
     {path: '', component: LoginComponent},
     {path: 'inbox', component: CaixaDeEntradaComponent },
-    {path: 'cadastro', component: CadastroComponent}
+    {path: 'cadastro', component: CadastroComponent},
+    {
+        path: '',
+        pathMatch: 'full',
+        redirectTo: 'inbox'
+    },
+    {
+        path: '**',
+        pathMatch: 'full',
+        redirectTo: 'login'
+    }
 ]
 
 export const ModuloRoteamento = RouterModule.forRoot(rotas);
