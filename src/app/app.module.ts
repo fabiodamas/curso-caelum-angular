@@ -1,3 +1,4 @@
+import { CmailFormFieldDirective } from './components/cmail-form-group/cmail-form-field.directive';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -17,7 +18,8 @@ import { CmailFormGroupComponent } from './components/cmail-form-group/cmail-for
     CaixaDeEntradaComponent,
     LoginComponent,
     CadastroComponent,
-    CmailFormGroupComponent
+    CmailFormGroupComponent,
+    CmailFormFieldDirective
   ],
   imports: [
     BrowserModule,
